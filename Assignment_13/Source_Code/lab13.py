@@ -48,8 +48,8 @@ class Grade_Test(unittest.TestCase):
         self.assertAlmostEqual(result,2.5)
 
     def test_median_odd(self):
-        result = Grades.median([4,7,2])
-        self.assertIs(result,4)
+        result = Grades.median([3,7,2])
+        self.assertIs(result,3)
 
     def test_median_empty(self):
         with self.assertRaises(ValueError):
